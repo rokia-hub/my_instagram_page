@@ -1,0 +1,563 @@
+[10/31/2026 7:34 PM] Me Ooredoo🎀: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Welcome to my creative space. Discover my work, ideas and inspiration.">
+
+  <title>My Instagram Profile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --text: #262626;
+      --muted: #8e8e8e;
+      --border: #dbdbdb;
+      --background: #ffffff;
+      --soft: #fafafa;
+      --accent: #9b7954;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--background);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .page {
+      width: min(100% - 36px, 1000px);
+      margin: 0 auto;
+    }
+
+    /* Top navigation */
+
+    .topbar {
+      height: 66px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .top-note {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* Profile section */
+
+    .profile {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 55px;
+      align-items: center;
+      padding: 55px 35px 35px;
+    }
+
+    .avatar-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .avatar {
+      width: 175px;
+      height: 175px;
+      border-radius: 50%;
+      padding: 4px;
+      border: 1px solid #c8a77e;
+      background: white;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      min-width: 0;
+    }
+
+    .username-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .username {
+      font-size: 23px;
+      font-weight: 500;
+    }
+
+    .profile-label {
+      background: #f5f0e9;
+      color: #806341;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-weight: 700;
+    }
+
+    .stats {
+      display: flex;
+      gap: 42px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .stat strong {
+      color: var(--text);
+      font-size: 16px;
+      margin-right: 4px;
+    }
+
+    .display-name {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    .bio {
+      font-size: 14px;
+      line-height: 1.9;
+      color: #555;
+      white-space: pre-line;
+    }
+
+    .website {
+      display: inline-block;
+      margin-top: 8px;
+      color: #725638;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .actions {
+      display: flex;
+      gap: 9px;
+      margin-top: 20px;
+    }
+
+    .action-btn {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 9px 22px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      background: #fafafa;
+      transition: 0.25s;
+      cursor: pointer;
+    }
+
+    .action-btn:hover {
+      background: #f0e9df;
+      border-color: #d6c2a8;
+    }
+
+    .action-btn.primary {
+      background: #262626;
+      color: white;
+      border-color: #262626;
+    }
+
+    .action-btn.primary:hover {
+      background: #806341;
+      border-color: #806341;
+    }
+
+    /* Highlights */
+
+    .highlights {
+      display: flex;
+      gap: 38px;
+      padding: 20px 35px 45px;
+      border-bottom: 1px solid var(--border);
+      overflow-x: auto;
+    }
+
+    .highlight {
+      text-align: center;
+      flex: 0 0 auto;
+    }
+[10/31/2026 7:34 PM] Me Ooredoo🎀: .highlight-circle {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      border: 1px solid #d5c2a8;
+      background: #f8f4ee;
+      display: grid;
+      place-items: center;
+      font-size: 25px;
+      margin: 0 auto 10px;
+    }
+
+    .highlight p {
+      font-size: 12px;
+      color: #555;
+    }
+
+    /* Posts heading */
+
+    .posts-heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 18px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #555;
+    }
+
+    .posts-heading span {
+      width: 18px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    /* Post grid */
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      padding-bottom: 55px;
+    }
+
+    .post {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #e8dfd2, #a98e70);
+      color: white;
+    }
+
+    .post:nth-child(2) {
+      background: linear-gradient(145deg, #c8c0b4, #706b63);
+    }
+
+    .post:nth-child(3) {
+      background: linear-gradient(145deg, #d7c6b0, #92775b);
+    }
+
+    .post:nth-child(4) {
+      background: linear-gradient(145deg, #d4d0c8, #99948a);
+    }
+
+    .post:nth-child(5) {
+      background: linear-gradient(145deg, #b6a28a, #65574b);
+    }
+
+    .post:nth-child(6) {
+      background: linear-gradient(145deg, #e0d5c7, #9b8268);
+    }
+
+    .post-content {
+      text-align: center;
+      padding: 15px;
+    }
+
+    .post-content strong {
+      display: block;
+      font-size: clamp(13px, 2vw, 20px);
+      letter-spacing: 2px;
+      margin-bottom: 7px;
+    }
+
+    .post-content small {
+      font-size: 10px;
+      letter-spacing: 2px;
+      opacity: 0.9;
+    }
+
+    .post:hover {
+      filter: brightness(0.88);
+    }
+
+    /* Footer */
+
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 25px 10px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    footer strong {
+      color: var(--accent);
+    }
+
+    /* Responsive design */
+
+    @media (max-width: 700px) {
+      .page {
+        width: 100%;
+      }
+
+      .topbar {
+        padding: 0 18px;
+        height: 58px;
+      }
+
+      .top-note {
+        font-size: 9px;
+      }
+
+      .profile {
+        grid-template-columns: 105px 1fr;
+        gap: 18px;
+        padding: 30px 16px 25px;
+      }
+
+      .avatar {
+        width: 95px;
+        height: 95px;
+      }
+
+      .username-row {
+        gap: 8px;
+        margin-bottom: 15px;
+      }
+
+      .username {
+        font-size: 18px;
+      }
+
+      .profile-label {
+        font-size: 8px;
+        padding: 5px 8px;
+      }
+
+      .stats {
+        gap: 17px;
+        margin-bottom: 15px;
+      }
+
+      .stat {
+        font-size: 11px;
+      }
+
+      .stat strong {
+        font-size: 13px;
+      }
+
+      .display-name {
+        font-size: 13px;
+      }
+
+      .bio {
+        font-size: 12px;
+        line-height: 1.7;
+      }
+
+      .actions {
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+
+      .action-btn {
+        padding: 8px 12px;
+        font-size: 11px;
+      }
+
+      .highlights {
+        gap: 24px;
+        padding: 18px 17px 30px;
+      }
+
+      .highlight-circle {
+        width: 65px;
+        height: 65px;
+      }
+
+      .posts {
+        gap: 2px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .profile {
+        grid-template-columns: 85px 1fr;
+        gap: 12px;
+      }
+
+      .avatar {
+        width: 78px;
+        height: 78px;
+      }
+
+      .stats {
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header class="topbar">
+      <a href="#" class="brand">MY<span>SPACE.</span></a>
+      <div class="top-note">Personal Profile</div>
+    </header>
+
+    <main>
+
+      <section class="profile">
+
+        <div class="avatar-wrap">
+          <img src="logo.jpg" alt="My profile logo" class="avatar">
+        </div>
+[10/31/2026 7:34 PM] Me Ooredoo🎀: <div class="profile-info">
+
+          <div class="username-row">
+            <h1 class="username">your_username</h1>
+            <span class="profile-label">CREATIVE SPACE</span>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><strong>12</strong> posts</div>
+            <div class="stat"><strong>1.2K</strong> followers</div>
+            <div class="stat"><strong>350</strong> following</div>
+          </div>
+
+          <p class="display-name">Your Name</p>
+
+          <p class="bio">Welcome to my little space.
+Creative ideas • Inspiration • Daily moments
+Creating memories, one post at a time.</p>
+
+          <a class="website" href="#">✦ Discover my world</a>
+
+          <div class="actions">
+            <a class="action-btn primary" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a class="action-btn" href="mailto:hello@example.com">Contact</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="highlights">
+
+        <div class="highlight">
+          <div class="highlight-circle">✦</div>
+          <p>About me</p>
+        </div>
+
+        <div class="highlight">
+          <div class="highlight-circle">♡</div>
+          <p>Favorites</p>
+        </div>
+
+        <div class="highlight">
+          <div class="highlight-circle">☼</div>
+          <p>Moments</p>
+        </div>
+
+        <div class="highlight">
+          <div class="highlight-circle">✧</div>
+          <p>Inspiration</p>
+        </div>
+
+      </section>
+
+      <div class="posts-heading">
+        <span></span>
+        MY GALLERY
+        <span></span>
+      </div>
+
+      <section class="posts">
+
+        <div class="post">
+          <div class="post-content">
+            <strong>CREATIVITY</strong>
+            <small>INSPIRE YOURSELF</small>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-content">
+            <strong>MOMENTS</strong>
+            <small>MAKE THEM COUNT</small>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-content">
+            <strong>BE YOURSELF</strong>
+            <small>YOUR OWN STYLE</small>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-content">
+            <strong>DREAM</strong>
+            <small>THINK BIG</small>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-content">
+            <strong>INSPIRE</strong>
+            <small>EVERY SINGLE DAY</small>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-content">
+            <strong>YOUR STORY</strong>
+            <small>IS UNIQUE</small>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      MADE WITH CARE · <strong>MYSPACE</strong>
+    </footer>
+
+  </div>
+
+</body>
+</html>
